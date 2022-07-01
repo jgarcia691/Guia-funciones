@@ -31,14 +31,14 @@ int main(){
 	char str1[20],str2[20]; //declaracion de variables tipo char para recibir cadenas
 	char *str3; //declaracion del puntero tipo char que recibira la direccion de memoria de la nueva cadena
 	
-	printf("Introduce una frase: \n"); //ENTRADA Y LECTURA DE CADENAS
-	scanf("%s",str1);
-	printf("Introduce otra frase \n");
-	scanf("%s",str2);
+	puts("Introduce una frase: "); //ENTRADA Y LECTURA DE CADENAS
+	gets(str1);
+	puts("Introduce otra frase: ");
+	gets(str2);
 	
 	str3= concatenacion_inv(str1,str2); //asignacion de la nueva cadena llamando a la funcion concatenacion_inv
 	
-	printf("%s",str3); //Salida
+	puts(str3); //Salida
 	return 0;
 	
 }
