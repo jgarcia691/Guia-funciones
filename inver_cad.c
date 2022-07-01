@@ -28,10 +28,13 @@ char *concatenacion_inv (char *str1,char *str2){ //Funcion tipo puntero char par
 }
 
 int main(){
-	char str1[]= "buenos dias "; //declaracion de ambas cadenas
-	char str2[]="amigos";
-	
+	char str1[20],str2[20]; //declaracion de variables tipo char para recibir cadenas
 	char *str3; //declaracion del puntero tipo char que recibira la direccion de memoria de la nueva cadena
+	
+	printf("Introduce una frase: \n"); //ENTRADA Y LECTURA DE CADENAS
+	scanf("%s",str1);
+	printf("Introduce otra frase \n");
+	scanf("%s",str2);
 	
 	str3= concatenacion_inv(str1,str2); //asignacion de la nueva cadena llamando a la funcion concatenacion_inv
 	
